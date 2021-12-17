@@ -15,36 +15,84 @@
     width: 100%;
     height: 100%;
 }
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
 /*Fine Common*/
 
 
 /*Inizio Header*/
 header{
-    float: right;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    left: 15%;
     height: 80px;
-    width: 80%;
-    background-color: cornflowerblue;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 /*Fine Header*/
 
 /*Inizio Nav*/
 nav{
     float: left;
-    height: 1500px;
-    width: 20%;
-    background-color:chocolate ;
+    height: 100vh;
+    width: 15%;
+    background-color: rgba(0, 0, 0);
+    padding-bottom: 100px;
+    justify-content: space-between;
+
+}
+
+.user{
+    width: 100%;
+    flex-basis: 15%;
+    border: solid 1px white;
+}
+
+.functions{
+    flex-basis: 10%;
+    border: solid 1px white;
+    width: 100%;
+}
+
+.playlist{
+    /*overflow-y: scroll;*/
+    flex-basis: 65%;
+    border: solid 1px white;
+    width: 100%;
+}
+
+.logo{
+    flex-basis: 10%;
+    border: solid 1px white;
+    width: 100%;
 }
 /*Fine Nav*/
 
 /*Inizio Main*/
 main{
     float: left;
-    width: 80%;
-    height: calc(1500px - 80px);
-    background-color: crimson;
+    width: 85%;
+    height: 100vh;
+    background-color: rgb(20, 25, 34);
+    overflow-y: scroll;
+    justify-content: center;
     
 }
 
+.menu{
+    height: 50px;
+    flex-basis: 50%;
+    margin-top: 100px;
+    border: solid white 1px;
+}
 /*Fine Main*/
 
 /*Inizio Footer*/
@@ -54,6 +102,6 @@ footer{
     z-index: 999;
     width: 100%;
     height: 100px;
-    background-color:chartreuse;
+    background-color:rgb(40, 40, 40);
 }
 /*Fine Footer*/
