@@ -11,6 +11,11 @@
     display: flex;
 }
 
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
 /*Inizio header*/
 header{
     z-index: 999;
@@ -48,6 +53,35 @@ nav{
     bottom: 120px;
     left: 0;
 }
+
+.nav-content{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    height: 15%;
+    border: solid 1px white;
+}
+
+.functions{
+    width: 100%;
+    height: 20%;
+    border: solid 1px white;
+}
+
+.playlists{
+    width: 100%;
+    height: 45%;
+    border: solid 1px white;
+}
+
+.user{
+    width: 100%;
+    height: 20%;
+    border: solid 1px white;
+}
 /*Fine nav*/
 
 /*Inizio Main*/
@@ -70,5 +104,21 @@ footer{
     left: 0;
     bottom: 0;
     background-color: rgb(40, 40, 40);
+}
+
+.footer-content{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-l, .footer-r{
+    border: solid white 1px;
+    width: 25%;
+}
+
+.footer-c{
+    border: solid white 1px;
+    width: 50%;
+    height: 100%;
 }
 /*Fine Footer*/
