@@ -1,5 +1,59 @@
+/*Inizio Common*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+/*Fine Common*/
+
+
+/*Inizio Header*/
+header{
+    float: right;
+    height: 80px;
+    width: 80%;
+    background-color: cornflowerblue;
+}
+/*Fine Header*/
+
+/*Inizio Nav*/
+nav{
+    float: left;
+    height: 1500px;
+    width: 20%;
+    background-color:chocolate ;
+}
+/*Fine Nav*/
+
+/*Inizio Main*/
+main{
+    float: left;
+    width: 80%;
+    height: calc(1500px - 80px);
+    background-color: crimson;
+    
+}
+
+/*Fine Main*/
+
+/*Inizio Footer*/
+footer{
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100px;
+    background-color:chartreuse;
+}
+/*Fine Footer*/
