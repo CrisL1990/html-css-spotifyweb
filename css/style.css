@@ -16,7 +16,7 @@
     flex-direction: column;
 }
 
-/*Inizio header*/
+/*Inizio CTA*/
 .cta{
     z-index: 999;
     position: fixed;
@@ -44,7 +44,11 @@
     margin-right: 20px;
     font-size: 15px;
 }
-/*Fine header*/
+
+.cta .btn a{
+    text-decoration: none;
+}
+/*Fine CTA*/
 
 /*Inizio Nav*/
 nav{
@@ -142,6 +146,11 @@ nav{
     font-size: 13px;
     color: rgb(111, 111, 111);
 }
+
+#create-playlist{
+    color: rgb(111, 111, 111);
+}
+
 .user{
     width: 100%;
     height: 15%;
@@ -202,10 +211,6 @@ nav{
     width: 100%;
     height: 100%;
 }
-
-
-
-
 /*Fine nav*/
 
 /*Inizio Main*/
@@ -228,11 +233,26 @@ main{
 }
 
 .menu{
-    border: solid white 1px;
     align-self: center;
     margin-top: 100px;
     width: 70%;
     height: 50px;
+    justify-content: center;
+}
+
+.menu-list{
+    list-style: none;
+   
+}
+
+.menu-list li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu-list li a{
+    text-decoration: none;
+    color: rgb(111, 111, 111);
 }
 
 .recent{
