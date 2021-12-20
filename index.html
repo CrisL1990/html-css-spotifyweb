@@ -8,24 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300&family=Roboto:wght@300;500;900&family=Rubik+Mono+One&display=swap" rel="stylesheet"><<<<
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300&family=Roboto:wght@300;500;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify web</title>
 </head>
 <body>
 
-    <!--Inizio header-->
-    <header class="flex">
+    <!--Inizio CTA-->
+    <div class="cta flex">
 
         <div class="upgrade flex">
 
-            <div class="btn">
-
+            <div class="btn flex">
+                EFFETTUA L'UGRADE
             </div>
 
         </div>
-    </header>
-    <!--Fine header-->
+    </div>
+    <!--Fine CTA-->
 
     <!--Inizio nav-->
     <nav>
@@ -34,25 +35,102 @@
 
             <!--Inizio Logo-->
             <div class="logo">
-
+                <div class="logo-content flex">
+                    <img id="logo-img" src="img/logo-small.svg" alt="Logo spotify">
+                    <h1>Spotify</h1>
+                </div>
             </div>
             <!--Fine Logo-->
 
             <!--Inizio Functions-->
             <div class="functions">
-
+                <!--Inizio UL-->
+                <ul class="fun-list">
+                    <li class="flex">
+                        <img id="home" src="img/home.svg" alt="Home icon">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="flex">
+                        <img src="img/search.svg" alt="Home icon">
+                        <a href="#">Cerca</a>
+                    </li>
+                    <li class="flex">
+                        <img src="img/libreria.svg" alt="Home icon">
+                        <a href="#">La Tua Libreria</a>
+                    </li>
+                </ul>
+                <!--Fine UL-->
             </div>
             <!--Fine Functions-->
 
             <!--Inizio Playlist-->
             <div class="playlists">
 
+                <!--Inizio titolo Playlists-->
+                <div class="playlist-title">
+                    <h3>PLAYLIST</h3>
+                </div>
+                <!--Fine titolo Playlists-->
+
+                <!--Inizio Create Playlist-->
+                <div class="create flex">
+                    <div class="plus flex">
+                        <span class="plus-icon">+</span>
+                    </div>
+                    <span>Crea Playlist</span>
+                </div>
+                <!--Fine Create Playlist-->
+
+                <!--Inizio lista Playlist-->
+                <div class="playlists-list">
+                    <ul>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Fine lista Playlist-->
             </div>
             <!--Fine Playlists-->
 
             <!--Inizio User-->
-            <div class="user">
+            <div class="user flex-col">
 
+                <div class="install flex">
+                    <div class="round flex">
+                        <i id="arrow-down" class="fas fa-long-arrow-alt-down"></i>
+                    </div>
+
+                    <a id="install-app" href="">Install app</a>
+                </div>
+
+                <div class="user-profile">
+                    <div class="user-pic flex">
+                        <div class="round-2 flex">
+                            <img id="profile-picture" src="img/profile.svg" alt="Profile picture">
+                        </div>
+                        <span>John Doe</span>
+                        
+                    </div>
+                </div>
             </div>
             <!--Fine User-->
         </div>
@@ -64,8 +142,8 @@
         <div class="main-content flex-col">
 
             <!--Inizio Menu-->
-            <div class="menu">
-                MENU
+            <div class="menu flex">
+                
             </div>
             <!--Fine Menu-->
 
@@ -86,6 +164,7 @@
                 Artisti più popolari
             </div>
             <!--Fine Popular-->
+            
         </div>
         
     </main>
@@ -97,19 +176,19 @@
 
             <!--Inizio Footer Left-->
             <div class="footer-l">
-
+                FOOTER LEFT
             </div>
             <!--Fine Footer Left-->
 
             <!--Inizio Footer Central-->
             <div class="footer-c">
-
+                FOOTER CENTER
             </div>
             <!--Fine Footer Central-->
 
             <!--Inizio Footer Right-->
             <div class="footer-r">
-
+                FOOTER RIGHT
             </div>
             <!--Fine Footer Right-->
         </div>
