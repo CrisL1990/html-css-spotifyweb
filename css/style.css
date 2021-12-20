@@ -281,7 +281,7 @@ main{
     font-size: 13px;
     color: rgb(125, 127, 133);
 }
-.recommend{
+.recommend, .popular{
     width: 50%;
     margin-left: 20px;
     margin-top: 100px;
@@ -312,16 +312,9 @@ main{
     text-align: center;
 }
 
-
-.popular{
-    border: solid white 1px;
-    width: 30%;
-    height: 300px;
-    margin-left: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.round-img{
+    border-radius: 50%;
 }
-
 /*Fine Main*/
 
 /*Inizio Footer*/
@@ -340,14 +333,114 @@ footer{
 }
 
 .footer-l, .footer-r{
-    border: solid white 1px;
-    width: 25%;
+    width: 15%;
 }
 
 .footer-c{
-    border: solid white 1px;
-    width: 50%;
+    width: 70%;
     height: 100%;
+}
+
+.album-footer{
+    width: 50px;
+    height: 50px;
+}
+
+.footer-l{
+    align-items: center;
+    margin-left: 15px;
+}
+
+.info{
+    margin-left: 10px;
+    width: 50%;
+}
+
+.author{
+    font-size: 13px;
+}
+
+.song{
+    font-size: 12px;
+    color: rgb(111, 111, 111);
+}
+
+.fa-heart, .fa-folder{
+    color: rgb(111, 111, 111);
+    margin-right: 20px;
+}
+
+.footer-l-icon{
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.volume{
+    height: 5px;
+    width: 100px;
+    background-color: rgb(111, 111, 111);
+    border-radius: 5px;
+}
+
+.vol-sel{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(194, 194, 194);
+}
+
+.footer-r{
+    margin-right: 15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-r-element{
+    margin-left: 15px;
+}
+
+.transport, .time{
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.transport{
+    align-items: center;
+    justify-content: center;
+}
+
+.transport-icons{
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-play-circle{
+    font-size: 25px;
+}
+
+.time{
+    justify-content: center;
+    align-items: center;
+}
+
+.play-status{
+    flex-basis: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-line{
+    width: 90%;
+    height: 5px;
+    background-color: rgb(111, 111, 111);
+    border-radius: 5px;
+}
+
+.play-istant{
+    height: 100%;
+    width: 25%;
+    background-color: rgb(194, 194, 194);
+
 }
 /*Fine Footer*/
 
