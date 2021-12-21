@@ -60,6 +60,7 @@ a{
 
 .cta .btn a{
     text-decoration: none;
+    line-height: 80px;
 }
 /*Fine CTA*/
 
@@ -96,9 +97,14 @@ nav{
 
 .functions .fun-list li{
     list-style: none;
-    margin-left: 20px;
+    padding-left: 20px;
     margin-top: 10px;
     align-items: center;
+    margin-left: -20px;
+}
+
+.fun-list .flex .active{
+    border-left: solid #99dd25 3px;
 }
 
 .functions .fun-list li img{
@@ -110,6 +116,7 @@ nav{
 .functions .fun-list li a{
     text-decoration: none;
     color: rgb(93, 93, 93);
+    padding-left: 20px;
 }
 
 .functions{
@@ -353,7 +360,7 @@ footer{
 .footer-c{
     width: 1000px;  
     height: 100%;
-    min-width: 600px;
+    /*min-width: 600px;*/
 }
 
 .album-footer{
@@ -390,7 +397,6 @@ footer{
 }
 
 .footer-l-icon{
-
     justify-content: flex-end;
 }
 
@@ -408,6 +414,7 @@ footer{
 }
 
 .footer-r{
+    width: 250px;
     margin-right: 15px;
     align-items: center;
     justify-content: flex-end;
@@ -431,6 +438,7 @@ footer{
     width: 30%;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .transport-icons .fas{
