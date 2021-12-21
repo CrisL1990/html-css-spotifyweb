@@ -65,6 +65,20 @@ a{
 /*Fine CTA*/
 
 /*Inizio Nav*/
+.cont-bottom{
+    height: 100px;
+    background-color: black;
+}
+
+.cont-top{
+    height: calc(100% - 100px);
+    overflow-y: hidden;
+}
+
+.logo-small{
+    display: none;
+}
+
 nav{
     background-color: transparent;
     position: absolute;
@@ -79,7 +93,7 @@ nav{
 .nav-content{
     height: 100%;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .logo{
@@ -150,8 +164,9 @@ nav{
 
 .playlists-list{
     margin-left: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 100px;
+    height: 30vh;
 }
 
 .playlists-list ul li{
@@ -172,7 +187,6 @@ nav{
 .user{
     margin-left: 20px;
     flex-basis: 100px;
-    
     display: block;
     background-color: black;
     padding-bottom: 10px;
@@ -213,6 +227,7 @@ nav{
 
 .user-profile{
     margin-top: 15px;
+    margin-left: 0px;
 }
 .round-2{
     margin-right: 10px;
@@ -506,19 +521,37 @@ footer{
         height: 20%;
     }
 
-    .user{
-        height: 70%;
+
+    .logo, .ftn-txt, .playlists, .playlists-list, 
+    .create .playlists-title, #install-app, #john{
+        display: none;
     }
 
     .logo-content{
-        display: none;
+        margin-left: 10px;
     }
 
-    .ftn-txt{
-        display: none;
+    .logo-small{
+        display: block;
+        
     }
 
-   
+    .logo-small .logo-content #logo-img-2{
+        width: 30px;
+        height: 30px;
+    }
+
+    .install{
+        border: none;
+    }
+
+    .functions .fun-list li a{
+        padding-left: 10px;
+    }
+
+    .fun-list .flex .active{
+        border: none;
+    }
 }
 /*FINE LAYOUT XS*/
 
@@ -527,7 +560,7 @@ footer{
     nav{
         width: 40%;
     }
-
+    
     header, main{
         left: 40%;
         width: 60%;
