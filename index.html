@@ -46,15 +46,15 @@
                 <!--Inizio UL-->
                 <ul class="fun-list">
                     <li class="flex">
-                        <img id="home" src="img/home.svg" alt="Home icon">
+                        <a href=""><img id="home" src="img/home.svg" alt="Home icon"></a>
                         <a href="#">Home</a>
                     </li>
                     <li class="flex">
-                        <img src="img/search.svg" alt="Home icon">
+                        <a href=""><img src="img/search.svg" alt="Home icon"></a>
                         <a href="#">Cerca</a>
                     </li>
                     <li class="flex">
-                        <img src="img/libreria.svg" alt="Home icon">
+                        <a href=""><img src="img/libreria.svg" alt="Home icon"></a>
                         <a href="#">La Tua Libreria</a>
                     </li>
                 </ul>
@@ -63,8 +63,8 @@
             <!--Fine Functions-->
 
             <!--Inizio Playlist-->
+            <!--Inizio Playlists top-->
             <div class="playlists">
-
                 <!--Inizio titolo Playlists-->
                 <div class="playlist-title">
                     <h4>PLAYLIST</h4>
@@ -73,38 +73,42 @@
 
                 <!--Inizio Create Playlist-->
                 <div class="create flex">
-                    <div class="plus flex">
-                        <span class="plus-icon">+</span>
-                    </div>
-                    <span id="create-playlist">Crea Playlist</span>
+                    <a href="">
+                        <div class="plus flex">
+                            <span class="plus-icon">+</span>
+                        </div>
+                    </a>
+                    
+                    <a id="create-playlist" href="#">Crea Playlist</a>
                 </div>
-                <!--Fine Create Playlist-->
-
-                <!--Inizio lista Playlist-->
-                <div class="playlists-list">
-                    <ul>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Fine lista Playlist-->
+                <!--Fine Create Playlist-->               
             </div>
+            <!--Fine Playlists top-->
+
+            <!--Inizio lista Playlist-->
+            <div class="playlists-list">
+                <ul>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fine lista Playlist-->
             <!--Fine Playlists-->
 
             <!--Inizio User-->
@@ -376,8 +380,8 @@
                  </div>
 
                  <div class="footer-l-icon flex">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="far fa-folder"></i></a>
                  </div>
             </div>
             <!--Fine Footer Left-->
@@ -390,7 +394,7 @@
                     <div class="transport-icons flex">
                         <i class="fas fa-random"></i>
                         <i class="fas fa-step-backward"></i>
-                        <i class="far fa-play-circle"></i>
+                        <i id="play" class="far fa-play-circle"></i>
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo-alt"></i>
                     </div>
