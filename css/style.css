@@ -752,7 +752,6 @@ footer{
     /*Inizio main*/
     .menu{
         width: 80%;
-       
     }
 
     .menu-list{
@@ -881,9 +880,133 @@ footer{
 
 /*INIZIO LAYOUT MD*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /*Inizio main*/
     .recommend, .popular{
         width: 50%;
     }
+
+    .menu{
+        width: 90%;
+    }
+
+    .menu-list{
+        height: 80px;
+        justify-content: center;
+    }
+
+    .menu-list li a{
+        font-size: 13px;
+    }
+
+    .recent, .recommend, .popular{
+        width: 90%;  
+    }
+
+    .recommend{
+        margin-top: 50px;
+    }
+
+    .album, .rel-container{
+        width: calc(100% / 4);
+    }
+
+    .album-container{
+        flex-wrap: wrap;
+    }
+
+    .release{
+        width: 100%;
+    }
+    /*Fine main*/
+
+    /*Inizio Footer*/
+
+    /*Inizio footer l*/
+    .footer-l{
+        width: 25%;
+    }
+
+    .album-footer{
+        width: 30px;
+        height: 30px;
+    }
+
+    .info{
+        flex-wrap: wrap;
+        width: 20px;
+        margin-right: 50px;
+    }
+    /*Fine footer l*/
+
+    .footer-c{
+        width: 60%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .transport-icons{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .transport{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .transport-icons a{
+        margin: 0 13px;
+        margin-top: 20px;
+        
+    }
+
+    .transport-icons a .fas{
+        font-size: 15px;
+    }
+
+    .play-status{
+        margin-bottom: 20px;
+    }
+
+    #play{
+        font-size: 30px;
+    }
+
+    .play-line{
+        width: 85%;
+    }
+
+    .min{
+        font-size: 10px;
+    }
+    /*Fine Footer c*/
+
+    /*Inizio Footer r*/
+    .footer-r{
+        width: 20%;
+        padding-right: 10px;
+        justify-content: flex-start;
+        margin-right: 0px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .footer-r-element{
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    .footer-r a i{
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    .volume{
+        width: 80px;
+        height: 4px;
+    }
+    /*Fine Footer*/
 }
 /*FINE LAYOUT MD*/
 
