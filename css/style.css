@@ -67,7 +67,7 @@ a{
 /*Inizio Nav*/
 .cont-bottom{
     height: 100px;
-    background-color: black;
+    background-color: black;   
 }
 
 .cont-top{
@@ -97,7 +97,7 @@ nav{
 }
 
 .logo{
-    width: 100%;
+    width: 80%;
 }
 
 .logo-content{
@@ -229,6 +229,11 @@ nav{
     margin-top: 15px;
     margin-left: 0px;
 }
+
+.user-profile-2{
+    display: none;
+}
+
 .round-2{
     margin-right: 10px;
     justify-content: center;
@@ -272,10 +277,12 @@ main{
     width: 70%;
     height: 50px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu-list{
     list-style: none;
+    flex-wrap: wrap;
    
 }
 
@@ -291,7 +298,7 @@ main{
 
 .recent{
     width: 98%;
-    height: 300px;
+    
     margin: 50px 20px
 }
 
@@ -363,6 +370,7 @@ footer{
     left: 0;
     bottom: 0;
     background-color: rgb(40, 40, 40);
+    overflow-x: hidden;
 }
 
 .footer-content{
@@ -490,16 +498,12 @@ footer{
 /*Fine Footer*/
 
 
-
-
-
-
-
 /*----------------INIZIO MEDIA QUERY-----------------------------*/
 
 /*INIZIO LAYOUT XS*/
 @media screen and (min-width: 0px) and (max-width: 576px) {
 
+    
     nav{
         width: 10%;
     }
@@ -509,6 +513,20 @@ footer{
         width: 90%;
     }
     
+    /*Inizio CTA*/
+    .cta{
+        width: 90%;
+        left:  10%;
+    }
+    
+    .btn{
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+    }
+    /*Fine CTA*/
+
+    /*Inizio sidebar*/
     nav .nav-content .playlists{
         display: none;
     }
@@ -521,9 +539,9 @@ footer{
         height: 20%;
     }
 
-
     .logo, .ftn-txt, .playlists, .playlists-list, 
-    .create .playlists-title, #install-app, #john{
+    .create .playlists-title, #install-app, #john,
+    .user-profile{
         display: none;
     }
 
@@ -543,6 +561,9 @@ footer{
 
     .install{
         border: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .functions .fun-list li a{
@@ -552,6 +573,63 @@ footer{
     .fun-list .flex .active{
         border: none;
     }
+
+    .cont-bottom{
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    .user{
+        margin-left: 0px;
+        
+
+    }
+    .user-profile-2{
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(128, 128, 128);
+        overflow: hidden;
+    }
+    /*Fine sidebar*/
+
+    /*Inizio main*/
+    .menu{
+        width: 90%;
+       
+    }
+
+    .menu-list{
+        height: 80px;
+        justify-content: center;
+    }
+
+    .menu-list li a{
+        font-size: 13px;
+    }
+
+
+    .recent, .recommend, .popular{
+        width: 90%;  
+    }
+
+    .recommend{
+        margin-top: 50px;
+    }
+
+    .album, .rel-container{
+        width: calc(100% / 2);
+    }
+
+    .album-container{
+        flex-wrap: wrap;
+    }
+
+    .release{
+        width: 100%;
+    }
+    /*Fine main*/
 }
 /*FINE LAYOUT XS*/
 
