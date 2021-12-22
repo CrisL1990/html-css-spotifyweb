@@ -109,16 +109,17 @@ nav{
     margin-right: 10px;
 }
 
+
 .functions .fun-list li{
     list-style: none;
     padding-left: 20px;
     margin-top: 10px;
     align-items: center;
-    margin-left: -20px;
+    
 }
 
-.fun-list .flex .active{
-    border-left: solid #99dd25 3px;
+.ftn-txt{
+    padding-left: 0px;
 }
 
 .functions .fun-list li img{
@@ -130,8 +131,9 @@ nav{
 .functions .fun-list li a{
     text-decoration: none;
     color: rgb(93, 93, 93);
-    padding-left: 20px;
 }
+
+
 
 .functions{
     width: 100%;
@@ -538,6 +540,10 @@ footer{
         height: 20%;
     }
 
+    .functions .fun-list li{
+        padding-left: 10px;
+    }
+
     .logo, .ftn-txt, .playlists, .playlists-list, 
     .create .playlists-title, #install-app, #john,
     .user-profile{
@@ -563,10 +569,6 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100%;
-    }
-
-    .functions .fun-list li a{
-        padding-left: 10px;
     }
 
     .fun-list .flex .active{
@@ -723,12 +725,12 @@ footer{
 /*INIZIO LAYOUT S*/
 @media screen and (min-width: 577px) and (max-width: 767px) {
     nav{
-        width: 40%;
+        width: 30%;
     }
     
-    header, main{
-        left: 40%;
-        width: 60%;
+    .cta, main{
+        left: 30%;
+        width: 70%;
     }
 
     .recent, .recommend, .popular{
@@ -737,7 +739,142 @@ footer{
     }
 
     .btn{
-        width: 200px;
+        width: 220px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+
+    .functions .fun-list li a{
+        font-size: 13px;
+    }
+
+    /*Inizio main*/
+    .menu{
+        width: 80%;
+       
+    }
+
+    .menu-list{
+        height: 80px;
+        justify-content: center;
+    }
+
+    .menu-list li a{
+        font-size: 13px;
+    }
+
+
+    .recent, .recommend, .popular{
+        width: 90%;  
+    }
+
+    .recommend{
+        margin-top: 50px;
+    }
+
+    .album, .rel-container{
+        width: calc(100% / 2);
+    }
+
+    .album-container{
+        flex-wrap: wrap;
+    }
+
+    .release{
+        width: 100%;
+    }
+    /*Fine main*/
+
+    /*Inizio footer*/
+    /*Inizio footer l*/
+    .footer-l{
+        width: 25%;
+    }
+
+    .album-footer{
+        width: 30px;
+        height: 30px;
+    }
+
+    .info{
+        flex-wrap: wrap;
+        width: 20px;
+        margin-right: 50px;
+    }
+
+    .footer-l-icon{
+        flex-direction: column;
+    }
+    /*Fine footer l*/
+
+    /*Inizio Footer c*/
+    .footer-c{
+        width: 45%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .transport-icons{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .transport{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .transport-icons a{
+        margin: 0 13px;
+        margin-top: 20px;
+        
+    }
+
+    .transport-icons a .fas{
+        font-size: 15px;
+    }
+
+    .play-status{
+        margin-bottom: 20px;
+    }
+
+    #play{
+        font-size: 30px;
+    }
+
+    .play-line{
+        width: 70%;
+    }
+
+    .min{
+        font-size: 10px;
+    }
+    /*Fine Footer c*/
+
+    /*Inizio Footer r*/
+    .footer-r{
+        width: 30%;
+        padding-right: 10px;
+        justify-content: flex-start;
+        margin-right: 0px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .footer-r-element{
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    .footer-r a i{
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    .volume{
+        width: 80px;
+        height: 4px;
     }
 }
 /*FINE LAYOUT S*/
