@@ -393,8 +393,7 @@ footer{
 .footer-l{
     align-items: center;
     margin-left: 15px;
-    width: 15%;
-    min-width: 250px;
+    
 }
 
 .info{
@@ -518,7 +517,7 @@ footer{
         width: 90%;
         left:  10%;
     }
-    
+
     .btn{
         width: 200px;
         height: 40px;
@@ -630,6 +629,94 @@ footer{
         width: 100%;
     }
     /*Fine main*/
+
+    /*Inizio footer*/
+    /*Inizio footer l*/
+    .footer-l{
+        width: 25%;
+    }
+
+    .album-footer{
+        width: 30px;
+        height: 30px;
+    }
+
+    .info{
+        flex-wrap: wrap;
+        width: 20px;
+        margin-right: 50px;
+    }
+
+    .footer-l-icon{
+        flex-direction: column;
+    }
+    /*Fine footer l*/
+
+    /*Inizio Footer c*/
+    .footer-c{
+        width: 45%;
+    }
+
+    .transport-icons{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .transport{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .transport-icons a{
+        margin: 0 13px;
+        margin-top: 20px;
+        
+    }
+
+    .transport-icons a .fas{
+        font-size: 15px;
+    }
+
+    .play-status{
+        margin-bottom: 20px;
+    }
+
+    #play{
+        font-size: 30px;
+    }
+
+    .play-line{
+        width: 70%;
+    }
+
+    .min{
+        font-size: 10px;
+    }
+    /*Fine Footer c*/
+
+    /*Inizio Footer r*/
+    .footer-r{
+        width: 30%;
+        padding-right: 10px;
+        justify-content: flex-start;
+        margin-right: 0px;
+    }
+
+    .footer-r-element{
+        margin-left: 0px;
+    }
+
+    .footer-r a i{
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    .volume{
+        width: 80px;
+        height: 4px;
+    }
+    /*Fine Footer r*/
+    /*Fine footer*/
 }
 /*FINE LAYOUT XS*/
 
