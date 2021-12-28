@@ -11,7 +11,6 @@ a{
     text-decoration: none;
 }
 
-
 .playlists-list::-webkit-scrollbar{
     background-color: black;
 }
@@ -61,6 +60,10 @@ a{
 .cta .btn a{
     text-decoration: none;
     line-height: 80px;
+}
+
+.btn:hover{
+    transform: scale(1.07);
 }
 /*Fine CTA*/
 
@@ -112,10 +115,20 @@ nav{
 
 .functions .fun-list li{
     list-style: none;
-    padding-left: 20px;
     margin-top: 10px;
     align-items: center;
-    
+}
+
+.functions .fun-list li:hover a{
+    color: white;
+}
+
+.functions .fun-list li a img{
+    filter: opacity(0.5);
+}
+
+.functions .fun-list li:hover img{
+    filter: opacity(1);
 }
 
 .ftn-txt{
@@ -133,15 +146,27 @@ nav{
     color: rgb(93, 93, 93);
 }
 
-
-
 .functions{
     width: 100%;
 }
 
+.active{
+    height: 30px;
+    width: 10px;
+    margin-right: 20px;
+}
+
+#home, #home-txt{
+    filter: opacity(1);
+    color: white;
+}
+.select .active{
+    border-left: solid 5px #99dd25;
+}
+
 .playlists{
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
     width: 100%;
 }
 
@@ -165,7 +190,7 @@ nav{
 }
 
 .playlists-list{
-    margin-left: 20px;
+    margin-left: 30px;
     overflow-y: auto;
     padding-bottom: 100px;
     height: 30vh;
@@ -187,7 +212,7 @@ nav{
 }
 
 .user{
-    margin-left: 20px;
+    margin-left: 30px;
     flex-basis: 100px;
     display: block;
     background-color: black;
@@ -252,6 +277,18 @@ nav{
     width: 100%;
     height: 100%;
 }
+
+.functions .fun-list .flex a:hover,
+.playlists-list ul li a:hover,
+.create:hover #create-playlist,
+#install-app:hover{
+    color: white;
+}
+
+.create:hover .plus{
+    background-color: white;
+}
+
 /*Fine nav*/
 
 /*Inizio Main*/
@@ -282,6 +319,10 @@ main{
     flex-wrap: wrap;
 }
 
+.menu .menu-list li:hover a{
+    color: white;
+}
+
 .menu-list{
     list-style: none;
     flex-wrap: wrap;
@@ -291,6 +332,16 @@ main{
 .menu-list li{
     display: inline-block;
     margin: 0 10px;
+    position: relative;
+    
+}
+
+.selected{
+    width: 33.33%;
+    height: 3px;
+    background-color: #99dd25;
+    position: absolute;
+    left: 33.33%;
 }
 
 .menu-list li a{
@@ -362,6 +413,36 @@ main{
 .round-img{
     border-radius: 50%;
 }
+
+.img-album{
+    position: relative;
+}
+
+.play-hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;  
+}
+
+.img-album:hover .play-hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.play-hover a #play{ 
+    font-size: 60px;
+}
+
+.round-img .play-hover{
+    border-radius: 50%;
+}
+
 /*Fine Main*/
 
 /*Inizio Footer*/
@@ -382,27 +463,24 @@ footer{
 }
 
 .footer-c{
-    width: 70%;  
+    width: 65%;  
     height: 100%;
-    /*min-width: 600px;*/
 }
 
 .album-footer{
-   
     height: 50px;
 }
 
 .footer-l{
     align-items: center;
-    margin-left: 15px;
+    margin-left: 20px;
     
 }
 
 .info{
     margin-left: 10px;
     flex-wrap: nowrap;
-    
-    margin-right: 30px;
+   
 }
 
 .author{
@@ -414,6 +492,19 @@ footer{
     color: rgb(111, 111, 111);
 }
 
+#song-name{
+    color: rgb(111, 111, 111);
+}
+
+#song-name:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-l-icon a i:hover{
+    color: white;
+}
+
 .fa-heart, .fa-folder{
     color: rgb(111, 111, 111);
     margin-right: 20px;
@@ -421,6 +512,7 @@ footer{
 
 .footer-l-icon{
     justify-content: flex-end;
+    margin-left: 30px;
 }
 
 .volume{
@@ -432,7 +524,7 @@ footer{
 
 .vol-sel{
     height: 100%;
-    width: 20%;
+    width: 50%;
     background-color: rgb(194, 194, 194);
 }
 
@@ -453,6 +545,7 @@ footer{
 }
 
 .transport{
+    padding-top: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -460,21 +553,33 @@ footer{
 .transport-icons{
     width: 30%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    /*margin-top: 20px;*/
     
 }
 
 .transport-icons .fas{
     font-size: 20px;
+    margin: 0px 10px;
+}
+
+.play-cont{
+    width: 50px;
+    text-align: center;
 }
 
 #play{
+    font-size: 35px;
+}
+
+#play:hover{
     font-size: 40px;
 }
 
 .time{
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .play-status{
@@ -485,7 +590,7 @@ footer{
 
 .play-line{
     width: 90%;
-    height: 5px;
+    height: 6px;
     background-color: rgb(111, 111, 111);
     border-radius: 5px;
 }
@@ -496,6 +601,37 @@ footer{
     background-color: rgb(194, 194, 194);
 
 }
+
+.play-istant-hover{
+    width: 100%;
+    height: 100%;
+    background-color: #99dd25;
+    display: none;
+    
+}
+
+.play-istant:hover .play-istant-hover{
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+
+.time-point{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid black 1px;
+    justify-content: flex-end;
+}
+
+.vol-sel:hover .play-istant-hover{
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    cursor: pointer;
+}
 /*Fine Footer*/
 
 
@@ -503,8 +639,6 @@ footer{
 
 /*INIZIO LAYOUT XS*/
 @media screen and (min-width: 0px) and (max-width: 576px) {
-
-    
     nav{
         width: 10%;
     }
@@ -573,6 +707,10 @@ footer{
 
     .fun-list .flex .active{
         border: none;
+    }
+
+    .active{
+        display: none;
     }
 
     .cont-bottom{
@@ -651,6 +789,7 @@ footer{
 
     .footer-l-icon{
         flex-direction: column;
+        margin-left: 0px;
     }
     /*Fine footer l*/
 
@@ -670,8 +809,8 @@ footer{
     }
     
     .transport-icons a{
-        margin: 0 13px;
-        margin-top: 20px;
+        margin: 0 5px;
+     
         
     }
 
@@ -721,6 +860,18 @@ footer{
     /*Fine footer*/
 }
 /*FINE LAYOUT XS*/
+
+/*INIZIO LAYOUT FOOTER SCHERMI XXS*/
+@media screen and (min-width: 0px) and (max-width: 490px){
+    .footer-l, .footer-r{
+        display: none;
+    }
+
+    .footer-c{
+        width: 100%;
+    }
+}
+/*FINE LAYOUT FOOTER SCHERMI XXS*/
 
 /*INIZIO LAYOUT S*/
 @media screen and (min-width: 577px) and (max-width: 767px) {
@@ -805,6 +956,7 @@ footer{
     .footer-l-icon{
         flex-direction: column;
     }
+    
     /*Fine footer l*/
 
     /*Inizio Footer c*/
@@ -826,7 +978,7 @@ footer{
     
     .transport-icons a{
         margin: 0 13px;
-        margin-top: 20px;
+        
         
     }
 
@@ -924,7 +1076,7 @@ footer{
 
     /*Inizio footer l*/
     .footer-l{
-        width: 25%;
+        width: 20%;
     }
 
     .album-footer{
@@ -939,6 +1091,7 @@ footer{
     }
     /*Fine footer l*/
 
+    /*Inizio footer c*/
     .footer-c{
         width: 60%;
         flex-shrink: 0;
@@ -957,7 +1110,7 @@ footer{
     
     .transport-icons a{
         margin: 0 13px;
-        margin-top: 20px;
+        
         
     }
 
@@ -985,7 +1138,7 @@ footer{
     /*Inizio Footer r*/
     .footer-r{
         width: 20%;
-        padding-right: 10px;
+        padding-right: 30px;
         justify-content: flex-start;
         margin-right: 0px;
         flex-shrink: 0;

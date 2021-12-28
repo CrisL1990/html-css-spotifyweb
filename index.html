@@ -52,16 +52,22 @@
                 <div class="functions">
                     <!--Inizio UL-->
                     <ul class="fun-list">
-                        <li class="flex">
-                            <a class="active" href="#"><img id="home" src="img/home.svg" alt="Home icon"></a>
-                            <a class="ftn-txt" href="#">Home</a>
+                        <li class="flex select">
+                            <div class="active">
+                            </div>
+                            <a href="#"><img id="home" src="img/home.svg" alt="Home icon"></a>
+                            <a class="ftn-txt" id="home-txt" href="#">Home</a>
                         </li>
                         <li class="flex">
-                            <a href=""><img src="img/search.svg" alt="Home icon"></a>
+                            <div class="active">
+                            </div>
+                            <a href=""><img src="img/search.svg" alt="Search icon"></a>
                             <a class="ftn-txt" href="#">Cerca</a>
                         </li>
                         <li class="flex">
-                            <a href=""><img src="img/libreria.svg" alt="Home icon"></a>
+                            <div class="active">
+                            </div>
+                            <a href=""><img src="img/libreria.svg" alt="Library icon"></a>
                             <a class="ftn-txt" href="#">La Tua Libreria</a>
                         </li>
                     </ul>
@@ -163,6 +169,8 @@
                 <ul class="menu-list flex">
                     <li>
                         <a href="#">IN EVIDENZA</a>
+                        <div class="selected">
+                        </div>
                     </li>
                     <li>
                         <a href="#">PODCAST</a>
@@ -195,7 +203,10 @@
 
                     <!--Inizio Album-->
                     <div class="album flex-col">
-                        <div >
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="album-pic" src="img/metal_lifting.jpg" alt="metal lifting cover">
                         </div>
 
@@ -211,7 +222,10 @@
 
                     <!--Inizio Album-->
                     <div class="album flex-col">
-                        <div >
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="album-pic" src="img/stranger.jpeg" alt="stranger things cover">
                         </div>
 
@@ -227,7 +241,10 @@
 
                     <!--Inizio Album-->
                     <div class="album flex-col">
-                        <div >
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="album-pic" src="img/aquietplace.jpeg" alt="a quiet place cover">
                         </div>
 
@@ -243,7 +260,10 @@
 
                     <!--Inizio Album-->
                     <div class="album flex-col">
-                        <div >
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="album-pic" src="img/split.jpeg" alt="split cover">
                         </div>
 
@@ -259,7 +279,10 @@
 
                     <!--Inizio Album-->
                     <div class="album flex-col">
-                        <div >
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="album-pic" src="img/cure.jpeg" alt="a cure for wellness cover">
                         </div>
 
@@ -275,7 +298,10 @@
 
                     <!--Inizio Album-->
                     <div class="album flex-col">
-                        <div >
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="album-pic" src="img/sinister.jpeg" alt="sinister cover">
                         </div>
 
@@ -308,7 +334,10 @@
 
                     <!--Inizio Release-->
                     <div class="rel-container flex-col">
-                        <div>
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="release-pic" src="img/radar.jpeg" alt="">
                         </div>
                         <div class="rel-txt">
@@ -319,7 +348,10 @@
 
                     <!--Inizio Release-->
                     <div class="rel-container flex-col">
-                        <div>
+                        <div class="img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="release-pic" src="img/mixdaily.jpeg" alt="">
                         </div>
                         <div class="rel-txt">
@@ -348,7 +380,10 @@
 
                     <!--Inizio Release-->
                     <div class="rel-container flex-col">
-                        <div class="round-img">
+                        <div class="round-img img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="round-img release-pic" src="img/youg.jpeg" alt="">
                         </div>
                         <div class="rel-txt">
@@ -359,7 +394,10 @@
 
                     <!--Inizio Release-->
                     <div class="rel-container flex-col">
-                        <div>
+                        <div class="round-img img-album">
+                            <div class="play-hover">
+                                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                            </div>
                             <img class="round-img release-pic" src="img/einaudi.jpeg" alt="">
                         </div>
                         <div class="rel-txt">
@@ -382,7 +420,7 @@
 
             <!--Inizio Footer Left-->
             <div class="footer-l flex">
-                 <div>
+                 <div >
                      <img class="album-footer" src="img/sinister.jpeg" alt="">
                  </div>
 
@@ -391,7 +429,7 @@
                         Sinister
                     </div>
                     <div class="song">
-                        Brano Nome
+                        <a id="song-name" href="#">Brano Nome</a>  
                     </div>
                  </div>
 
@@ -411,7 +449,10 @@
                     <div class="transport-icons flex">
                         <a href="#"><i class="fas fa-random"></i></a>
                         <a href="#"><i class="fas fa-step-backward"></i></a>
-                        <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                        <div class="play-cont">
+                            <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                        </div>
+                        
                         <a href="#"><i class="fas fa-step-forward"></i></a>
                         <a href="#"><i class="fas fa-redo-alt"></i></a>
                     </div>
@@ -426,6 +467,10 @@
 
                         <div class="play-line">
                             <div class="play-istant">
+                                <div class="play-istant-hover">
+                                    <div class="time-point">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -446,6 +491,10 @@
                 <a href=""><i class="fas footer-r-element fa-volume-up"></i></a>
                 <div class="volume footer-r-element">
                     <div class="vol-sel">
+                        <div class="play-istant-hover">
+                            <div class="time-point">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
