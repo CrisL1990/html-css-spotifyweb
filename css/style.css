@@ -67,21 +67,7 @@ a{
 }
 /*Fine CTA*/
 
-/*Inizio Nav*/
-.cont-bottom{
-    height: 100px;
-    background-color: black;   
-}
-
-.cont-top{
-    height: calc(100% - 100px);
-    overflow-y: hidden;
-}
-
-.logo-small{
-    display: none;
-}
-
+/*Inizio Sidebar*/
 nav{
     background-color: transparent;
     position: absolute;
@@ -99,6 +85,18 @@ nav{
     justify-content: flex-start;
 }
 
+/*Inizio Sidebar Top*/
+/*Inizio Logo*/
+.cont-top{
+    height: calc(100% - 100px);
+    overflow-y: hidden;
+}
+
+.logo-small{
+    display: none;
+}
+
+
 .logo{
     width: 80%;
 }
@@ -111,8 +109,9 @@ nav{
     width: 100%;
     margin-right: 10px;
 }
+/*Fine Logo*/
 
-
+/*Inizio Functions*/
 .functions .fun-list li{
     list-style: none;
     margin-top: 10px;
@@ -160,6 +159,7 @@ nav{
     filter: opacity(1);
     color: white;
 }
+
 .select .active{
     border-left: solid 5px #99dd25;
 }
@@ -169,7 +169,9 @@ nav{
     padding-left: 30px;
     width: 100%;
 }
+/*Fine Functions*/
 
+/*Inizio Playlist*/
 .create{
     align-items: center;
     margin-top: 20px;
@@ -210,15 +212,16 @@ nav{
 #create-playlist{
     color: rgb(111, 111, 111);
 }
+/*Fine Playlist*/
+/* Fine Sidebar Top*/
 
-.user{
-    margin-left: 30px;
-    flex-basis: 100px;
-    display: block;
-    background-color: black;
-    padding-bottom: 10px;
+/*Inizio Sidebar Bottom*/
+.cont-bottom{
+    height: 100px;
+    background-color: black;   
 }
 
+/*Inizio Install*/
 .install{
     width: 90%;
     height: 30px;
@@ -248,6 +251,16 @@ nav{
     margin-left: 10px;
 }
 
+.user{
+    margin-left: 30px;
+    flex-basis: 100px;
+    display: block;
+    background-color: black;
+    padding-bottom: 10px;
+}
+/*Fine Install*/
+
+/*Inizio User*/
 .user-pic{
     align-items: center;
 }
@@ -288,8 +301,9 @@ nav{
 .create:hover .plus{
     background-color: white;
 }
-
-/*Fine nav*/
+/*Fine User*/
+/*Fine Sidebar Bottom*/
+/*Fine Sidebar*/
 
 /*Inizio Main*/
 main{
@@ -310,6 +324,7 @@ main{
     align-content: flex-start;
 }
 
+/*Inizio Menu*/
 .menu{
     align-self: center;
     margin-top: 100px;
@@ -348,7 +363,9 @@ main{
     text-decoration: none;
     color: rgb(111, 111, 111);
 }
+/*Fine Menu*/
 
+/*Inizio Recent*/
 .recent{
     width: 98%;
     
@@ -375,6 +392,9 @@ main{
     font-size: 13px;
     color: rgb(125, 127, 133);
 }
+/*Fine Recent*/
+
+/*Inizio Recommend e Popular*/
 .recommend, .popular{
     width: 50%;
     margin-left: 20px;
@@ -442,7 +462,7 @@ main{
 .round-img .play-hover{
     border-radius: 50%;
 }
-
+/*Fine Recommend e Popular*/
 /*Fine Main*/
 
 /*Inizio Footer*/
@@ -462,11 +482,7 @@ footer{
     justify-content: space-between;
 }
 
-.footer-c{
-    width: 65%;  
-    height: 100%;
-}
-
+/*Inizio footer Left */
 .album-footer{
     height: 50px;
 }
@@ -514,6 +530,13 @@ footer{
     justify-content: flex-end;
     margin-left: 30px;
 }
+/*Fine Footer left*/
+
+/*Inizio Footer center*/
+.footer-c{
+    width: 65%;  
+    height: 100%;
+}
 
 .volume{
     height: 5px;
@@ -526,17 +549,6 @@ footer{
     height: 100%;
     width: 50%;
     background-color: rgb(194, 194, 194);
-}
-
-.footer-r{
-    width: 15%;
-    margin-right: 15px;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.footer-r-element{
-    margin-left: 15px;
 }
 
 .transport, .time{
@@ -632,6 +644,20 @@ footer{
     align-items: center;
     cursor: pointer;
 }
+/*Fine Footer center*/
+
+/*Inizio Footer right*/
+.footer-r{
+    width: 15%;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-r-element{
+    margin-left: 15px;
+}
+/*Fine Footer right*/
 /*Fine Footer*/
 
 
@@ -1162,5 +1188,4 @@ footer{
     /*Fine Footer*/
 }
 /*FINE LAYOUT MD*/
-
 /*----------------FINE MEDIA QUERY-----------------------------*/
