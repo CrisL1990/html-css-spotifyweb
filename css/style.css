@@ -558,6 +558,7 @@ footer{
     height: 100%;
     width: 50%;
     background-color: rgb(194, 194, 194);
+    border-radius: 5px;
 }
 
 .transport, .time{
@@ -620,6 +621,7 @@ footer{
     height: 100%;
     width: 25%;
     background-color: rgb(194, 194, 194);
+    border-radius: 5px;
 
 }
 
